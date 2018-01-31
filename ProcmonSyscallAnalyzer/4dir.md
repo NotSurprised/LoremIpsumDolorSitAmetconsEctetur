@@ -1,0 +1,1 @@
+dir /b/s  C:\0honeypot\image4test\* > dir.txt
