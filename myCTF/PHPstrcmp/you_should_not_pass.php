@@ -1,1 +1,0 @@
-<img src="you_should_not_pass.jpg">
