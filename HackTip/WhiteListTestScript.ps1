@@ -1,4 +1,4 @@
-cd C:\Users\User\AppData\Local
+cd C:\Users\Default\AppData\Local
 
 $url = "https://github.com/NotSurprised/MyCTF-Challenges/raw/master/ForUCCU/Bof/a17c074327645f88d92de82b511882a2935087990ef46063cef7f208c05a861f.exe" 
 $output = "UnknownMaliciousFile.exe"
