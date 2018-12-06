@@ -378,7 +378,7 @@ Then our `unserialize()` RCE attack flow might be:
 1. Use `POST` method to trigger payload.
 
 We can use [https://github.com/ambionics/phpggc/blob/master/gadgetchains/Monolog/RCE/1/gadgets.php](https://github.com/ambionics/phpggc/blob/master/gadgetchains/Monolog/RCE/1/gadgets.php) to construct a payload or use payload from PDKT-Team:
-```
+```php
 <?php
 
 namespace Monolog\Handler
