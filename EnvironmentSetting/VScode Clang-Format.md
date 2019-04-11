@@ -25,9 +25,13 @@ Or use GUI
 
 ![](https://i.imgur.com/Xl04JJW.png)
 
+You can find `/absolute/path/to/clang-format` by typing `whereis clang-format`
+
+![](https://i.imgur.com/CIQ3ppv.png)
+
 5. Create a new file `.clang-format` in project dir
 ```
-BasedOnStyle:    Google
+BasedOnStyle:    LLVM
 Language:        Cpp
 ColumnLimit:     100
 ```
