@@ -51,6 +51,14 @@ Cellular Disco 相較於此前的類似系統有以下創新:
 4. 支持大型著重記憶體使用的應用程式運算
 
 ### Overview of hardware virtualization
+為了完全模擬讓運行 Cellular Disco 上的 OS 無法察覺 Cellular Disco 的存在，Celluar Disco 需要虛擬出各種運行硬體要件，包括 CPU。所以在 Virtual CPU (VCPU)方面，因為虛擬的原因 Cellular Disco 就需要擷取特權指令交由真正的 CPU 來幫助處理本該由 VCPU 處理的特權指令，例如 I/O 請求。但如何分辨 VM 是否執行特權指令是 Cellular Disco 無法做到的，這依賴於 CPU 架構本身的支援，比起 x86 的完美虛擬兼容支援， MIPS 提供三種分層 user mode、supervisor mode、kernel mode。特權指令屬於 kernel mode 會由 MIPS CPU 退回 Cellular Disco 尤其檢查權限，然後才將請邱發送給對應的硬體執行。
+為了虛擬記憶體頁面給運行在 Cellular Disco 上的 VM， Cellular Disco 使用 pmap 來建立一個對應原本 Host 記憶體頁面的 mapping page。但是在切換 CPU 運算 VM 需求時，重新載入這個對應 VM 的 pmap 到 MIPS TLB 快取上十分耗時，CPU 會查找 TLB，VMM 會直接轉送查找給 VM，而 VM TLB 所記錄的卻是所存的虛擬記憶體位址，為了取得實際記憶體位置，VM需要拿虛擬位址給 VMM 查找已返回實際位址。為了降低這個問題耗時，Cellular Disco 為每個對應 VM 運行的 VCPU 都建立另一個 1024 接口的 TLB (L2TLB)，而這 L2TLB 所紀錄位址則無需查找 mapping 表，直接對應實際記憶體位置，這樣 VCPU 切到實際對應的 CPU 時，只要將 MIPS TLB 導向 L2TLB 即可。
+
+### Support for hardware fault containment
+當系統越大越複雜時，可靠度將是極大的考量標的。當系統越大時，完全崩壞到復原有極大的成本消耗。所以此處為了避免完全系統崩壞，有效的去收容導致崩壞的錯誤將是必須的。
+在 software fault containment 上(即 VM 內之 OS 運行產生的 fault)，Cellular Disco 本身直覺將其交付予 VM，這會由OS本身設計的機制收容處理，即使屬於其無法處理的 fault，受到影響並崩潰的也只是其所屬的 VM。
+而在 hardware fault containment 中，Cellular Disco 設計建立一個分隔機制，如果有此類 fault 產生也只會影響到該隔離區內的 VM，其他隔離區內的機器將不受影響地繼續運行。
+針對可靠度有個要點即是越簡約越輕量的邏輯系統，則可靠度越高。所以此處 Cellular Disco 在在強調其本身 VMM 的精簡，基於這個前提
 
 
 ## The Cellular Disco Prototype
