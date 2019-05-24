@@ -58,7 +58,7 @@ Cellular Disco 相較於此前的類似系統有以下創新:
 當系統越大越複雜時，可靠度將是極大的考量標的。當系統越大時，完全崩壞到復原有極大的成本消耗。所以此處為了避免完全系統崩壞，有效的去收容導致崩壞的錯誤將是必須的。
 在 software fault containment 上(即 VM 內之 OS 運行產生的 fault)，Cellular Disco 本身直覺將其交付予 VM，這會由OS本身設計的機制收容處理，即使屬於其無法處理的 fault，受到影響並崩潰的也只是其所屬的 VM。
 而在 hardware fault containment 中，Cellular Disco 設計建立一個分隔機制，如果有此類 fault 產生也只會影響到該隔離區內的 VM，其他隔離區內的機器將不受影響地繼續運行。
-針對可靠度有個要點即是越簡約越輕量的邏輯系統，則可靠度越高。所以此處 Cellular Disco 在在強調其本身 VMM 的精簡，基於這個前提
+針對可靠度有個要點即是越簡約越輕量的邏輯系統，則可靠度越高。所以此處 Cellular Disco 在在強調其本身 VMM 的精簡，基於這個前提可以想對於類似 Hive 系統溝通所使用的 protocol 使用更加精簡的 protocol 來相互溝通並更新資料結構。在使用此種較精簡的協定溝通後，需要另外考量的優化點即為當一 VM 影響多個 cell(隔離單位)，例如某個需要時常更新 VMM 記憶體對應的 address table。即使 Cellular Disco 可以使用共享記憶體，他們也無法直接接觸隔離圈外的記憶體單元。因此 Cellular Disco 另外設計了兩種溝通機制分別為 Fast inter-processor RPC(Remote Procedure Call)與 message， RPC無須詳述，主要利用其作用於多processor下的運用，而 Message 則是借用 CPU 上之 registry 在替換 VCPU 使用時不做清空，讓下個使用的 VCPU 接收，從而達到傳遞訊息的效果。此方法因為 VCPU 轉換交替由 VMM 控制而可行。
 
 
 ## The Cellular Disco Prototype
