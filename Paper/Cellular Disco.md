@@ -60,10 +60,34 @@ Cellular Disco 相較於此前的類似系統有以下創新:
 而在 hardware fault containment 中，Cellular Disco 設計建立一個分隔機制，如果有此類 fault 產生也只會影響到該隔離區內的 VM，其他隔離區內的機器將不受影響地繼續運行。
 針對可靠度有個要點即是越簡約越輕量的邏輯系統，則可靠度越高。所以此處 Cellular Disco 在在強調其本身 VMM 的精簡，基於這個前提可以想對於類似 Hive 系統溝通所使用的 protocol 使用更加精簡的 protocol 來相互溝通並更新資料結構。在使用此種較精簡的協定溝通後，需要另外考量的優化點即為當一 VM 影響多個 cell(隔離單位)，例如某個需要時常更新 VMM 記憶體對應的 address table。即使 Cellular Disco 可以使用共享記憶體，他們也無法直接接觸隔離圈外的記憶體單元。因此 Cellular Disco 另外設計了兩種溝通機制分別為 Fast inter-processor RPC(Remote Procedure Call)與 message， RPC無須詳述，主要利用其作用於多processor下的運用，而 Message 則是借用 CPU 上之 registry 在替換 VCPU 使用時不做清空，讓下個使用的 VCPU 接收，從而達到傳遞訊息的效果。此方法因為 VCPU 轉換交替由 VMM 控制而可行。
 
+### Resource management under constraints
+#### CPU management
+全域的待執行佇列對於 Cellular Disco 並不合適，為了完成 fault containment 的機制，Cellular Disco 必須將將其分割，每個 processor 都有其所對應的 VCPUs 子集及其待處理佇列。然後，為了避免單一處理器負載過重，Cellular Disco 有一平衡機制，此機制藉由轉移 VCPU 到負載較低之處理器福負責來平衡負載。
+另外談到 CPU 佇列就不免提到 scheduler， 因為VM接運行於 VMM 之上，Cellular Disco 只需排定 VCPU 的執行，為此其提供了一種應對分隔而產生 gang-scheduler 來排定工作。
 
-## The Cellular Disco Prototype
+#### Memory manaagement
+雖然記憶體應比照 CPU 對各 cell 進行隔離，但有特別過載運行的 VM 還是有可能使完 Cell 規範內的記憶體，通常 OS 會使用與硬碟借空間當記憶體 page out 機制來滿足超出的記憶體用量。但秉著有效利用所有資源的主旨，Cellular Disco 可以在其他 cell 有空間時轉移空間給有需要的 cell，但這只是應急備援，原則上還是遵行 fault containment 的隔離機制。
+
+### Support for large applications
+雖然 Cellular Disco 只會提供每個 VM 其 GuestOS 所能完整掌控的資源量，但是 Large Application 需要橫跨多個 VM 整合其資源進行運算。所以 Cellular Disco 藉由 VMM 內部 virtaul ethernet，將所有 VM 藉由網路串起後即如實體機的 cluster。這裡除了前述的 RPC 與 Message，Cellular Disco 使用他最強大機制，即 mapping memory page 來直接將特定需求導引到其所需腰的資料記憶體位置，這解決了實作 TCP/IP protcol 並等待傳遞的 overhead。
 
 ## Memory management
+### CPU balancing mechanisms
+前述平衡CPU 負載需要轉移 VCPU，有以下三種情況
+* Same node Same cell
+* Diff node Same cell
+* Diff cell
+Diff node 麻煩在於需要轉移前述的 L2TLB，因為並無法像 same node 依樣直接取用所以需要另外複製到轉移的 node，而 Diff cell 造成的問題將更加嚴重，基本上已消耗更多的成本進行轉移之外，因外失去快取與近似處理的機制支援，效能降低的同時還會造成轉移後的新 cell 可能產生 fault。當然，Cellular Disco 會盡量將所有相依相關資料從舊 cell 轉移到新 cell 已盡量將低 fault 產生之可能。
+
+### CPU balancing policies
+Cellular Disco 建立了兩種策略，分別是 idle balancer 與 periodic balancer，idle balancer 處理常規的平衡，大部分平衡都由其完成，而 periodic balancer 則是專門處理重新分配 idle balancer 無法處理的特殊狀況 VCPUs。idle balancer 偷取 VCPU 的時間點在相鄰或同 node 中 gang scheduler 所排定的 VCPU 工作排成都完成時才提取 VCPU。idle balancer 會負責將 VCPU 轉移到另外一個 CPU 上執行。在初始時，這個轉換所獲得的幾輕負載其實仍會因為無法取得原 CPU 上的快取與相似運算而損失回去。而這部分尤以 inter-node 明顯(與 intra-node 相比)。除此外， periodic balancer 即是為了解決 idle balancer 這種區域優化無法全域優化的補充，periodic balancer 藉由 idle balancer 轉移 VCPU 時會更新 periodic balancer 所有的 load tree 來判斷需優化的 node/cell 來達成全域最佳解。(此處本論文並無詳述權重)
+gang scheduler 本身不僅是排程工作，每當他執行排定工作時皆為兩個同 VM 的 VCPU 在 processor 上閒置並可執行時才重新排定工作，同時可以確認 VCPU 資源有無問題，藉此機會將有問題的 VCPU 移出 gang scheduler 交由 Cellular Disco 追蹤統一管理。
+
+### Scheduling policy
+Gang scheduler 會在所有佇列中尋找可執行但像未被執行且等最久的 VCPU 項目，然後發出 RPCs 通知給所有有與此相關同 VM 的 VCPU 項目的處理器，所有收到 RPCs 的處理器將停止當下運行的 VCPU 工作，轉而優先處理這個互相關連且等最久的 VCPUs，也因此稱為 gang scheduler。
+
+### Inter-cell migration issues
+
 
 ## Hardware fault recovery
 
