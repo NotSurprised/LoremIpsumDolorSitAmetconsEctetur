@@ -87,7 +87,8 @@ gang scheduler 本身不僅是排程工作，每當他執行排定工作時皆�
 Gang scheduler 會在所有佇列中尋找可執行但像未被執行且等最久的 VCPU 項目，然後發出 RPCs 通知給所有有與此相關同 VM 的 VCPU 項目的處理器，所有收到 RPCs 的處理器將停止當下運行的 VCPU 工作，轉而優先處理這個互相關連且等最久的 VCPUs，也因此稱為 gang scheduler。
 
 ### Inter-cell migration issues
-
+主要再說關於將 VCPU 轉移越過隔離區域時，需要連帶將所使用的記憶體儲存資料帶走，及前述的 cache 與相似性的相容轉移處理。這部分需要謹慎處理相關的資料結構轉移，而這結構通常由 pmap 主宰，但是 pmap 主宰的是整個 VM 所屬記憶體儲存區域，而轉移只需要提取 VCPU 所屬的部分即可。同時要注意得即為對應到 VCPU 的 L2TLB (STLB)，雖然 L2TLB 的對應可以有效處理 TLB 的 latency，但一定程度使 pmap 靠近新的 VCPUs 位置還是能有效降低 TLB 本身 miss 的程度。
+隨然 Cellular Disco 只要在所有 VCPUs 轉移出隔離單位時才會跟著轉移，但是只轉移資料結構本身並無法避免原生 VM 裡相關的 faults 攜出，所以在轉移時需要更謹慎選取所需要的轉移資料，而這過程是較為耗時且為了減少轉移後 faults 的產生而無可避免的。
 
 ## Hardware fault recovery
 
