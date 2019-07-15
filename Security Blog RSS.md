@@ -76,6 +76,9 @@ http://bhconsulting.ie/securitywatch/?feed=rss2
 SecWiki NewsSecurityTeam
 https://www.sec-wiki.com/news/rss
 
+SeeBug安全技术精粹
+https://paper.seebug.org/rss/
+
 Softpedia News / SecuritySecurityTeam
 https://news.softpedia.com/newsRSS/Security-5.xml
 
