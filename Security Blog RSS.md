@@ -1,6 +1,9 @@
 # Security Blog RSS
 
 ## News / Security Teaam / Hacker Group
+0x00sec - Latest posts
+https://0x00sec.org/posts.rss
+
 360安全播报 - 热门漏洞SecurityTeam
 http://bobao.360.cn/rss?type=hotvul
 
