@@ -153,5 +153,5 @@ PLC 如果可以直接收 fake packet 的 function code 就可以 success
 使用 Ettetcap Filter 進行 command injection
 
 ### Schneider
-FC-90 本意是在 PLC 失效時可以關掉 PLC，卻變成可以在 PLC 正常時強制關閉它
+FC-90 本意是在 PLC 失效時可以關掉 PLC，卻變成可以在 XPLC 正常時強制關閉它
 Unity Loader 12.0
