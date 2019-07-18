@@ -25,6 +25,9 @@ http://pwc.blogs.com/cyber_security_updates/rss.xml
 DEF CON Announcements!SecurityTeam
 http://www.defcon.org/defconrss.xml
 
+Dark Reading:
+https://www.darkreading.com/rss_simple.asp
+
 FreeBuf.COM | 关注黑客与极客SecurityTeam
 http://www.freebuf.com/feed
 
@@ -36,6 +39,9 @@ http://feeds.feedburner.com/govtech/blogs/lohrmann_on_infrastructure
 
 Hackaday » BlogSecurityTeam
 https://hackaday.com/blog/feed/
+
+Hacking Articles
+https://www.hackingarticles.in/feed/
 
 HITCON GIRLSSecurityTeam
 https://hitcon-girls.blogspot.com/feeds/posts/default
@@ -49,8 +55,17 @@ https://www.zdnet.com/topic/security/rss.xml
 Marco Ramilli's BlogSecurityTeam
 http://marcoramilli.blogspot.com/feeds/posts/default
 
+MDSec
+https://www.mdsec.co.uk/feed/
+
 Naked SecuritySecurityTeam
 http://nakedsecurity.sophos.com/feed/
+
+Netragard
+https://www.netragard.com/blog/feed
+
+NotSoSecure Labs
+https://www.notsosecure.com/blog/feed/
 
 Packet StormSecurityTeam
 https://rss.packetstormsecurity.com/
@@ -61,11 +76,26 @@ http://securityweekly.com/podcast/psw.xml
 Pentest BlogSecurityTeam
 https://pentest.blog/feed/
 
+Pen Test Partners
+https://www.pentestpartners.com/feed/
+
+Pentester's life
+https://pentesterslife.blog/feed/
+
+Penetration Testing – InfoSec Resources
+https://resources.infosecinstitute.com/category/pen-testing-1/feed/
+
+Penetration Testing Lab
+https://pentestlab.blog/feed/
+
 Privacy Ref BlogSecurityTeam
 http://privacyref.com/wordpress/feed
 
 Project ZeroSecurityTeam
 https://googleprojectzero.blogspot.com/feeds/posts/default
+
+SANS Penetration Testing
+https://pen-testing.sans.org/blog/feed/
 
 Schneier on SecuritySecurityTeam
 http://www.schneier.com/blog/index.rdf
@@ -93,6 +123,9 @@ http://thexploit.com/feed/rss/
 
 Threatpost | The first stop for security newsSecurityTeam
 http://threatpost.com/feed/
+
+Threat Ninja
+https://threatninja.net/feed/
 
 Trend Micro Simply SecuritySecurityTeam
 http://blog.trendmicro.com/feed
