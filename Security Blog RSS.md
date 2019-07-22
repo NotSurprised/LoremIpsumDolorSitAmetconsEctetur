@@ -13,6 +13,12 @@ http://software-security.sans.org/blog/feed/
 Attack and Defense LabsSecurityTeam
 http://blog.andlabs.org/feeds/posts/default
 
+Avast Blog
+https://blog.avast.com/rss.xml
+
+AWS Security Blog
+https://aws.amazon.com/tw/blogs/security/feed/
+
 CIO SecuritySecurityTeam
 http://www.cio.com/category/security/index.rss
 
@@ -30,6 +36,9 @@ https://www.darkreading.com/rss_simple.asp
 
 FreeBuf.COM | 关注黑客与极客SecurityTeam
 http://www.freebuf.com/feed
+
+Graham Cluley
+https://www.grahamcluley.com/feed/
 
 Google Online Security BlogSecurityTeam
 http://googleonlinesecurity.blogspot.com/atom.xml
@@ -94,17 +103,29 @@ http://privacyref.com/wordpress/feed
 Project ZeroSecurityTeam
 https://googleprojectzero.blogspot.com/feeds/posts/default
 
+Pulse Secure Blog
+https://blog.pulsesecure.net/feed/
+
+Qualys Blog
+https://blog.qualys.com/feed
+
 SANS Penetration Testing
 https://pen-testing.sans.org/blog/feed/
 
 Schneier on SecuritySecurityTeam
 http://www.schneier.com/blog/index.rdf
 
+Schneier on Security
+https://www.schneier.com/blog/atom.xml
+
 Security AffairsSecurityTeam
 http://securityaffairs.co/wordpress/feed
 
 SecurityWatchSecurityTeam
 http://bhconsulting.ie/securitywatch/?feed=rss2
+
+SecurityWeek RSS Feed
+http://feeds.feedburner.com/Securityweek
 
 SecWiki NewsSecurityTeam
 https://www.sec-wiki.com/news/rss
@@ -114,6 +135,9 @@ https://paper.seebug.org/rss/
 
 Softpedia News / SecuritySecurityTeam
 https://news.softpedia.com/newsRSS/Security-5.xml
+
+The Hacker News
+http://thehackernews.com/feeds/posts/default
 
 The Last WatchdogSecurityTeam
 http://lastwatchdog.com/feed/
@@ -130,11 +154,17 @@ https://threatninja.net/feed/
 Trend Micro Simply SecuritySecurityTeam
 http://blog.trendmicro.com/feed
 
+Varacode
+https://www.veracode.com/blog/feed
+
 VulnanoHacker
 https://www.vulnano.com/feeds/posts/default
 
 We Live Security » Languages » EnglishSecurityTeam
 http://feeds.feedburner.com/eset/blog
+
+Weird Threat Level
+https://www.wired.com/category/threatlevel/rss/
 
 Whitepaper Files ≈ Packet StormSecurityTeam
 http://rss.packetstormsecurity.org/files/tags/paper/
