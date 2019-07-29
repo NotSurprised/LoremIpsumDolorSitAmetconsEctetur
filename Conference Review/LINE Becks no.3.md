@@ -7,7 +7,7 @@
 3. replace malicious part with null/space(?)
 4. (deleting entire file)
 
-Windows Defneder analysis is tiresome work
+Windows Defender analysis is tiresome work
 * Unexpected behevior
 
 find oldversion in git : github/0xalexei/windowsDefender
