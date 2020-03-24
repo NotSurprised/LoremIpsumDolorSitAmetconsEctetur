@@ -1,0 +1,7 @@
+C:\Users\A70002\source\repos\Csharp4InstallUntil\Csharp4InstallUntil\obj\Debug\Csharp4InstallUntil.csprojAssemblyReference.cache
+C:\Users\A70002\source\repos\Csharp4InstallUntil\Csharp4InstallUntil\obj\Debug\Csharp4InstallUntil.csproj.CoreCompileInputs.cache
+C:\Users\A70002\source\repos\Csharp4InstallUntil\Csharp4InstallUntil\bin\Debug\Csharp4InstallUntil.exe.config
+C:\Users\A70002\source\repos\Csharp4InstallUntil\Csharp4InstallUntil\bin\Debug\Csharp4InstallUntil.exe
+C:\Users\A70002\source\repos\Csharp4InstallUntil\Csharp4InstallUntil\bin\Debug\Csharp4InstallUntil.pdb
+C:\Users\A70002\source\repos\Csharp4InstallUntil\Csharp4InstallUntil\obj\Debug\Csharp4InstallUntil.exe
+C:\Users\A70002\source\repos\Csharp4InstallUntil\Csharp4InstallUntil\obj\Debug\Csharp4InstallUntil.pdb
