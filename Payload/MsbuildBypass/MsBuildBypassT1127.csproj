@@ -23,7 +23,9 @@
 				public override bool Execute()
 				{
 					Console.WriteLine("Hello From a Class.");
-					string path = "../WLtester.txt";
+					string path = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
+					string filename = "/WLtester.txt";
+					path += filename;
 					using (FileStream file = File.Exists(path) ? File.Open(path, FileMode.Append) : File.Open(path, FileMode.CreateNew)) {
 						using (StreamWriter stream = new StreamWriter(file)) {
 							stream.WriteLine("MSBuildBypass.");

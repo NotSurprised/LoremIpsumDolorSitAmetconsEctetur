@@ -10,4 +10,4 @@ Write-Output "Time taken: $((Get-Date).Subtract($start_time).Seconds) second(s)"
 
 Start-Process -FilePath "UnknownMaliciousFile.exe"
 
-echo "MshtaHtaBypass" >> ../WLtester.txt
+$DesktopPath = [Environment]::GetFolderPath('Desktop');echo "MshtaHtaBypass" >> $DesktopPath\\WLtester.txt
