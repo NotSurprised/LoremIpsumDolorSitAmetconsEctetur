@@ -3,6 +3,8 @@
 #include <stdlib.h>
 #include <string.h>
 #include <time.h>
+#include <windows.h>
+#include <Lmcons.h>
 
 #pragma warning(disable : 4996)
 
@@ -36,8 +38,19 @@ extern "C" __declspec(dllexport) void rundll(HWND hwnd, HINSTANCE hinst, LPTSTR 
 void reverse_shell()
 {
 	MessageBox(NULL, TEXT("reverse_shell"), TEXT("Rundll32"), MB_OK);
+	char resultStr[UNLEN + 1];
+	TCHAR username[UNLEN + 1];
+	DWORD username_len = UNLEN + 1;
+	GetUserName(username, &username_len);
+	wcstombs(resultStr, username, wcslen(username));
+	sprintf(resultStr, "%S", username);
 	FILE * fp;
-	fp = fopen("Joke.txt", "w+");
+	char fpath[2048];
+	sprintf(fpath, "C:\\Users\\%s\\Desktop\\WLtester.txt", resultStr);
+	fp = fopen(fpath, "a+");
+	fprintf(fp, "Rundll32Bypass.\n");
+	fclose(fp);
+	/*fp = fopen("Joke.txt", "w+");
 	fprintf(fp, "                                 Even Judged?\n");
 	fprintf(fp, "                                       /           Let me in?\n");
 	fprintf(fp, " No license, no problem.            ∩＿＿＿∩        / \n");
@@ -51,7 +64,7 @@ void reverse_shell()
 	fprintf(fp, "　　  /       ╱                    |           |   .dll  ﹨| \n");
 	fprintf(fp, " 　 　    ╴／                      \\           |          |/\n");
 	fprintf(fp, "Dll/CPL GENERATES TIME: %lu\n", (unsigned long)time(NULL));
-	fclose(fp);
+	fclose(fp);*/
 	return;
 }
 

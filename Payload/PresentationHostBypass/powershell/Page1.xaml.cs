@@ -15,7 +15,7 @@ namespace powershell
         }
         private void Execute()
         {
-            string command = "$DesktopPath = [Environment]::GetFolderPath('Desktop');echo PresentationHostBypass > $DesktopPath\\WLtester.txt;";
+            string command = "$DesktopPath = [Environment]::GetFolderPath('Desktop');echo PresentationHostBypass >> $DesktopPath\\WLtester.txt;";
             RunspaceConfiguration rspacecfg = RunspaceConfiguration.Create();
             Runspace rspace = RunspaceFactory.CreateRunspace(rspacecfg);
             rspace.Open();
