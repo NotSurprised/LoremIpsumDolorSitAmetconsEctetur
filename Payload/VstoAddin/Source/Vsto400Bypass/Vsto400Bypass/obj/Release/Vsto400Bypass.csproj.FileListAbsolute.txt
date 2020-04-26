@@ -1,0 +1,11 @@
+C:\Users\A70002\source\repos\Vsto400Bypass\Vsto400Bypass\bin\Release\Vsto400Bypass.dll
+C:\Users\A70002\source\repos\Vsto400Bypass\Vsto400Bypass\bin\Release\Vsto400Bypass.pdb
+C:\Users\A70002\source\repos\Vsto400Bypass\Vsto400Bypass\bin\Release\Vsto400Bypass.dll.manifest
+C:\Users\A70002\source\repos\Vsto400Bypass\Vsto400Bypass\bin\Release\Vsto400Bypass.vsto
+C:\Users\A70002\source\repos\Vsto400Bypass\Vsto400Bypass\bin\Release\Microsoft.Office.Tools.Common.v4.0.Utilities.dll
+C:\Users\A70002\source\repos\Vsto400Bypass\Vsto400Bypass\obj\Release\Vsto400Bypass.Properties.Resources.resources
+C:\Users\A70002\source\repos\Vsto400Bypass\Vsto400Bypass\obj\Release\Vsto400Bypass.csproj.GenerateResource.cache
+C:\Users\A70002\source\repos\Vsto400Bypass\Vsto400Bypass\obj\Release\Vsto400Bypass.csproj.CoreCompileInputs.cache
+C:\Users\A70002\source\repos\Vsto400Bypass\Vsto400Bypass\obj\Release\Vsto400Bypass.csproj.CopyComplete
+C:\Users\A70002\source\repos\Vsto400Bypass\Vsto400Bypass\obj\Release\Vsto400Bypass.dll
+C:\Users\A70002\source\repos\Vsto400Bypass\Vsto400Bypass\obj\Release\Vsto400Bypass.pdb

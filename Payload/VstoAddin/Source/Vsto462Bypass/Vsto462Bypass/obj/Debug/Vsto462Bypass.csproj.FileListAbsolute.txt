@@ -1,0 +1,12 @@
+C:\Users\A70002\source\repos\Vsto462Bypass\Vsto462Bypass\bin\Debug\Vsto462Bypass.dll
+C:\Users\A70002\source\repos\Vsto462Bypass\Vsto462Bypass\bin\Debug\Vsto462Bypass.pdb
+C:\Users\A70002\source\repos\Vsto462Bypass\Vsto462Bypass\bin\Debug\Vsto462Bypass.dll.manifest
+C:\Users\A70002\source\repos\Vsto462Bypass\Vsto462Bypass\bin\Debug\Vsto462Bypass.vsto
+C:\Users\A70002\source\repos\Vsto462Bypass\Vsto462Bypass\bin\Debug\Microsoft.Office.Tools.Common.v4.0.Utilities.dll
+C:\Users\A70002\source\repos\Vsto462Bypass\Vsto462Bypass\obj\Debug\Vsto462Bypass.csprojAssemblyReference.cache
+C:\Users\A70002\source\repos\Vsto462Bypass\Vsto462Bypass\obj\Debug\Vsto462Bypass.Properties.Resources.resources
+C:\Users\A70002\source\repos\Vsto462Bypass\Vsto462Bypass\obj\Debug\Vsto462Bypass.csproj.GenerateResource.cache
+C:\Users\A70002\source\repos\Vsto462Bypass\Vsto462Bypass\obj\Debug\Vsto462Bypass.csproj.CoreCompileInputs.cache
+C:\Users\A70002\source\repos\Vsto462Bypass\Vsto462Bypass\obj\Debug\Vsto462Bypass.csproj.CopyComplete
+C:\Users\A70002\source\repos\Vsto462Bypass\Vsto462Bypass\obj\Debug\Vsto462Bypass.dll
+C:\Users\A70002\source\repos\Vsto462Bypass\Vsto462Bypass\obj\Debug\Vsto462Bypass.pdb

@@ -1,0 +1,132 @@
+﻿  stdafx.cpp
+  ImJoking.cpp
+  
+  正在搜尋程式庫
+      正在搜尋 C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\um\x64\kernel32.lib: 
+      正在搜尋 C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\um\x64\user32.lib: 
+      正在搜尋 C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\um\x64\gdi32.lib: 
+      正在搜尋 C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\um\x64\winspool.lib: 
+      正在搜尋 C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\um\x64\comdlg32.lib: 
+      正在搜尋 C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\um\x64\advapi32.lib: 
+      正在搜尋 C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\um\x64\shell32.lib: 
+      正在搜尋 C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\um\x64\ole32.lib: 
+      正在搜尋 C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\um\x64\oleaut32.lib: 
+      正在搜尋 C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\um\x64\uuid.lib: 
+      正在搜尋 C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\um\x64\odbc32.lib: 
+      正在搜尋 C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\um\x64\odbccp32.lib: 
+      正在搜尋 C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\lib\x64\MSVCRT.lib: 
+      正在搜尋 C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\lib\x64\OLDNAMES.lib: 
+      正在搜尋 C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\lib\x64\vcruntime.lib: 
+      正在搜尋 C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\ucrt\x64\ucrt.lib: 
+      正在搜尋 C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\um\x64\kernel32.lib: 
+      正在搜尋 C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\um\x64\user32.lib: 
+      正在搜尋 C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\um\x64\gdi32.lib: 
+      正在搜尋 C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\um\x64\winspool.lib: 
+      正在搜尋 C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\um\x64\comdlg32.lib: 
+      正在搜尋 C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\um\x64\advapi32.lib: 
+      正在搜尋 C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\um\x64\shell32.lib: 
+      正在搜尋 C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\um\x64\ole32.lib: 
+      正在搜尋 C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\um\x64\oleaut32.lib: 
+      正在搜尋 C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\um\x64\uuid.lib: 
+      正在搜尋 C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\um\x64\odbc32.lib: 
+      正在搜尋 C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\um\x64\odbccp32.lib: 
+      正在搜尋 C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\lib\x64\MSVCRT.lib: 
+      正在搜尋 C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\lib\x64\OLDNAMES.lib: 
+      正在搜尋 C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\lib\x64\vcruntime.lib: 
+      正在搜尋 C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\ucrt\x64\ucrt.lib: 
+  
+  已完成程式庫搜尋
+     正在建立程式庫 C:\Users\A70002\Documents\GitHub\LoremIpsumDolorSitAmetconsEctetur\Payload\ImJoking\x64\Release\ImJoking.lib 和物件 C:\Users\A70002\Documents\GitHub\LoremIpsumDolorSitAmetconsEctetur\Payload\ImJoking\x64\Release\ImJoking.exp
+  
+  正在搜尋程式庫
+      正在搜尋 C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\um\x64\kernel32.lib: 
+      正在搜尋 C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\um\x64\user32.lib: 
+      正在搜尋 C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\um\x64\gdi32.lib: 
+      正在搜尋 C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\um\x64\winspool.lib: 
+      正在搜尋 C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\um\x64\comdlg32.lib: 
+      正在搜尋 C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\um\x64\advapi32.lib: 
+      正在搜尋 C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\um\x64\shell32.lib: 
+      正在搜尋 C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\um\x64\ole32.lib: 
+      正在搜尋 C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\um\x64\oleaut32.lib: 
+      正在搜尋 C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\um\x64\uuid.lib: 
+      正在搜尋 C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\um\x64\odbc32.lib: 
+      正在搜尋 C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\um\x64\odbccp32.lib: 
+      正在搜尋 C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\lib\x64\MSVCRT.lib: 
+      正在搜尋 C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\lib\x64\OLDNAMES.lib: 
+      正在搜尋 C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\lib\x64\vcruntime.lib: 
+      正在搜尋 C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\ucrt\x64\ucrt.lib: 
+  
+  已完成程式庫搜尋
+  
+  正在搜尋程式庫
+      正在搜尋 C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\um\x64\kernel32.lib: 
+      正在搜尋 C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\um\x64\user32.lib: 
+      正在搜尋 C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\um\x64\gdi32.lib: 
+      正在搜尋 C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\um\x64\winspool.lib: 
+      正在搜尋 C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\um\x64\comdlg32.lib: 
+      正在搜尋 C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\um\x64\advapi32.lib: 
+      正在搜尋 C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\um\x64\shell32.lib: 
+      正在搜尋 C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\um\x64\ole32.lib: 
+      正在搜尋 C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\um\x64\oleaut32.lib: 
+      正在搜尋 C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\um\x64\uuid.lib: 
+      正在搜尋 C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\um\x64\odbc32.lib: 
+      正在搜尋 C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\um\x64\odbccp32.lib: 
+      正在搜尋 C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\lib\x64\MSVCRT.lib: 
+      正在搜尋 C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\lib\x64\OLDNAMES.lib: 
+      正在搜尋 C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\lib\x64\vcruntime.lib: 
+      正在搜尋 C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\ucrt\x64\ucrt.lib: 
+  
+  已完成程式庫搜尋
+  正在產生程式碼
+  All 10 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  已完成程式碼產生
+  
+  正在搜尋程式庫
+      正在搜尋 C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\um\x64\kernel32.lib: 
+      正在搜尋 C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\um\x64\user32.lib: 
+      正在搜尋 C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\um\x64\gdi32.lib: 
+      正在搜尋 C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\um\x64\winspool.lib: 
+      正在搜尋 C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\um\x64\comdlg32.lib: 
+      正在搜尋 C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\um\x64\advapi32.lib: 
+      正在搜尋 C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\um\x64\shell32.lib: 
+      正在搜尋 C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\um\x64\ole32.lib: 
+      正在搜尋 C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\um\x64\oleaut32.lib: 
+      正在搜尋 C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\um\x64\uuid.lib: 
+      正在搜尋 C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\um\x64\odbc32.lib: 
+      正在搜尋 C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\um\x64\odbccp32.lib: 
+      正在搜尋 C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\lib\x64\MSVCRT.lib: 
+      正在搜尋 C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\lib\x64\OLDNAMES.lib: 
+      正在搜尋 C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\lib\x64\vcruntime.lib: 
+      正在搜尋 C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\ucrt\x64\ucrt.lib: 
+      正在搜尋 C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\um\x64\kernel32.lib: 
+      正在搜尋 C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\um\x64\user32.lib: 
+      正在搜尋 C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\um\x64\gdi32.lib: 
+      正在搜尋 C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\um\x64\winspool.lib: 
+      正在搜尋 C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\um\x64\comdlg32.lib: 
+      正在搜尋 C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\um\x64\advapi32.lib: 
+      正在搜尋 C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\um\x64\shell32.lib: 
+      正在搜尋 C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\um\x64\ole32.lib: 
+      正在搜尋 C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\um\x64\oleaut32.lib: 
+      正在搜尋 C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\um\x64\uuid.lib: 
+      正在搜尋 C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\um\x64\odbc32.lib: 
+      正在搜尋 C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\um\x64\odbccp32.lib: 
+  
+  已完成程式庫搜尋
+  
+  正在搜尋程式庫
+      正在搜尋 C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\um\x64\kernel32.lib: 
+      正在搜尋 C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\um\x64\user32.lib: 
+      正在搜尋 C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\um\x64\gdi32.lib: 
+      正在搜尋 C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\um\x64\winspool.lib: 
+      正在搜尋 C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\um\x64\comdlg32.lib: 
+      正在搜尋 C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\um\x64\advapi32.lib: 
+      正在搜尋 C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\um\x64\shell32.lib: 
+      正在搜尋 C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\um\x64\ole32.lib: 
+      正在搜尋 C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\um\x64\oleaut32.lib: 
+      正在搜尋 C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\um\x64\uuid.lib: 
+      正在搜尋 C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\um\x64\odbc32.lib: 
+      正在搜尋 C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\um\x64\odbccp32.lib: 
+      正在搜尋 C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\lib\x64\MSVCRT.lib: 
+  
+  已完成程式庫搜尋
+  ImJoking.vcxproj -> C:\Users\A70002\Documents\GitHub\LoremIpsumDolorSitAmetconsEctetur\Payload\ImJoking\x64\Release\ImJoking.dll
