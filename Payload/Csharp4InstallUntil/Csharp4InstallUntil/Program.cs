@@ -1,12 +1,34 @@
 ﻿using System;
 using System.Management.Automation;
+using System.Configuration.Install;
+using System.Collections;
+using System.Collections.Specialized;
+using System.Reflection;
+using System.Runtime.CompilerServices;
 // edit the .csproj to add this reference.
 namespace Whitelist
 {
     class Program
     {
+        public static void AutoPublish()
+        {
+            try
+            {
+                using (AssemblyInstaller ai = new AssemblyInstaller())
+                {
+                    IDictionary idt = new Hashtable();
+                    ai.UseNewContext = true;
+                    ai.Path = Assembly.GetCallingAssembly().Location;
+                    ai.Uninstall(idt);
+                }
+            }
+            catch (Exception ex)
+            { Console.WriteLine("error: \n" + ex.ToString()); }
+        }
+
         static void Main(string[] args)
         {
+            AutoPublish();
         }
     }
 }
@@ -14,6 +36,7 @@ namespace Whitelist
 // Install need be added in reference, just put "install" in search box.
 public class Sample : System.Configuration.Install.Installer
 {
+
     //The Methods can be Uninstall/Install.  Install is transactional, and really unnecessary.
     public override void Uninstall(System.Collections.IDictionary savedState)
     {
@@ -23,3 +46,4 @@ public class Sample : System.Configuration.Install.Installer
         ps.Invoke();
     }
 }
+
