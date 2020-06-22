@@ -12,4 +12,4 @@ Start-Process -FilePath "UnknownMaliciousFile.exe"
 
 Start-Process -FilePath "Regsvr32OfflinePayload.exe"
 
-$DesktopPath = [Environment]::GetFolderPath('Desktop');echo "Regsvr32OnlineScriptBypass." >> $DesktopPath\\WLtester.txt
+$DesktopPath = [Environment]::GetFolderPath('Desktop');echo Regsvr32OnlineScriptBypass. >> $DesktopPath\\WLtester.txt
