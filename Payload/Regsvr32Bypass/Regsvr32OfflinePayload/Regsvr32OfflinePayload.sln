@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1062
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Regsvr32OfflinePayload", "Regsvr32OfflinePayload\Regsvr32OfflinePayload.vcxproj", "{27E898D3-C959-45E3-B106-091A3CAEA37C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{27E898D3-C959-45E3-B106-091A3CAEA37C}.Debug|x64.ActiveCfg = Debug|x64
+		{27E898D3-C959-45E3-B106-091A3CAEA37C}.Debug|x64.Build.0 = Debug|x64
+		{27E898D3-C959-45E3-B106-091A3CAEA37C}.Debug|x86.ActiveCfg = Debug|Win32
+		{27E898D3-C959-45E3-B106-091A3CAEA37C}.Debug|x86.Build.0 = Debug|Win32
+		{27E898D3-C959-45E3-B106-091A3CAEA37C}.Release|x64.ActiveCfg = Release|x64
+		{27E898D3-C959-45E3-B106-091A3CAEA37C}.Release|x64.Build.0 = Release|x64
+		{27E898D3-C959-45E3-B106-091A3CAEA37C}.Release|x86.ActiveCfg = Release|Win32
+		{27E898D3-C959-45E3-B106-091A3CAEA37C}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C8CB38C8-2F20-42CA-905D-0CBC9D594DE5}
+	EndGlobalSection
+EndGlobal

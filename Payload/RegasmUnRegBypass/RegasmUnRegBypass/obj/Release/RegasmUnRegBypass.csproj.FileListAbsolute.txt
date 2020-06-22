@@ -1,0 +1,6 @@
+C:\Users\A70002\source\repos\RegasmUnRegBypass\RegasmUnRegBypass\bin\Release\RegasmUnRegBypass.dll
+C:\Users\A70002\source\repos\RegasmUnRegBypass\RegasmUnRegBypass\bin\Release\RegasmUnRegBypass.pdb
+C:\Users\A70002\source\repos\RegasmUnRegBypass\RegasmUnRegBypass\obj\Release\RegasmUnRegBypass.csproj.CoreCompileInputs.cache
+C:\Users\A70002\source\repos\RegasmUnRegBypass\RegasmUnRegBypass\obj\Release\RegasmUnRegBypass.dll
+C:\Users\A70002\source\repos\RegasmUnRegBypass\RegasmUnRegBypass\obj\Release\RegasmUnRegBypass.pdb
+C:\Users\A70002\source\repos\RegasmUnRegBypass\RegasmUnRegBypass\obj\Release\RegasmUnRegBypass.csprojAssemblyReference.cache

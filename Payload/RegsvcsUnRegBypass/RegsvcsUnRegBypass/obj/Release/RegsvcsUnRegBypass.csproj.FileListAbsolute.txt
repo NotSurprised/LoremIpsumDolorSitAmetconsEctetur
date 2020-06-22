@@ -1,0 +1,5 @@
+C:\Users\A70002\source\repos\RegsvcsUnRegBypass\RegsvcsUnRegBypass\bin\Release\RegsvcsUnRegBypass.dll
+C:\Users\A70002\source\repos\RegsvcsUnRegBypass\RegsvcsUnRegBypass\bin\Release\RegsvcsUnRegBypass.pdb
+C:\Users\A70002\source\repos\RegsvcsUnRegBypass\RegsvcsUnRegBypass\obj\Release\RegsvcsUnRegBypass.csproj.CoreCompileInputs.cache
+C:\Users\A70002\source\repos\RegsvcsUnRegBypass\RegsvcsUnRegBypass\obj\Release\RegsvcsUnRegBypass.dll
+C:\Users\A70002\source\repos\RegsvcsUnRegBypass\RegsvcsUnRegBypass\obj\Release\RegsvcsUnRegBypass.pdb

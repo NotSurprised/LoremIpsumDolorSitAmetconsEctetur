@@ -1,0 +1,6 @@
+﻿  Csharp4InstallUntilOnlinePayload.cpp
+c:\users\a70002\source\repos\csharp4installuntilonlinepayload\csharp4installuntilonlinepayload\csharp4installuntilonlinepayload.cpp(13): warning C4101: 'choice': 未參考的區域變數
+  正在產生程式碼
+  All 9 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  已完成程式碼產生
+  Csharp4InstallUntilOnlinePayload.vcxproj -> C:\Users\A70002\source\repos\Csharp4InstallUntilOnlinePayload\x64\Release\Csharp4InstallUntilOnlinePayload.exe

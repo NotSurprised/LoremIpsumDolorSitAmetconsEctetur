@@ -5,10 +5,3 @@ C:\Users\A70002\source\repos\Csharp4InstallUntil\Csharp4InstallUntil\obj\Release
 C:\Users\A70002\source\repos\Csharp4InstallUntil\Csharp4InstallUntil\obj\Release\Csharp4InstallUntil.csproj.CoreCompileInputs.cache
 C:\Users\A70002\source\repos\Csharp4InstallUntil\Csharp4InstallUntil\obj\Release\Csharp4InstallUntil.exe
 C:\Users\A70002\source\repos\Csharp4InstallUntil\Csharp4InstallUntil\obj\Release\Csharp4InstallUntil.pdb
-C:\Users\A70002\Documents\GitHub\LoremIpsumDolorSitAmetconsEctetur\Payload\Csharp4InstallUntil\Csharp4InstallUntil\bin\Release\Csharp4InstallUntil.exe.config
-C:\Users\A70002\Documents\GitHub\LoremIpsumDolorSitAmetconsEctetur\Payload\Csharp4InstallUntil\Csharp4InstallUntil\bin\Release\Csharp4InstallUntil.exe
-C:\Users\A70002\Documents\GitHub\LoremIpsumDolorSitAmetconsEctetur\Payload\Csharp4InstallUntil\Csharp4InstallUntil\bin\Release\Csharp4InstallUntil.pdb
-C:\Users\A70002\Documents\GitHub\LoremIpsumDolorSitAmetconsEctetur\Payload\Csharp4InstallUntil\Csharp4InstallUntil\obj\Release\Csharp4InstallUntil.csprojAssemblyReference.cache
-C:\Users\A70002\Documents\GitHub\LoremIpsumDolorSitAmetconsEctetur\Payload\Csharp4InstallUntil\Csharp4InstallUntil\obj\Release\Csharp4InstallUntil.csproj.CoreCompileInputs.cache
-C:\Users\A70002\Documents\GitHub\LoremIpsumDolorSitAmetconsEctetur\Payload\Csharp4InstallUntil\Csharp4InstallUntil\obj\Release\Csharp4InstallUntil.exe
-C:\Users\A70002\Documents\GitHub\LoremIpsumDolorSitAmetconsEctetur\Payload\Csharp4InstallUntil\Csharp4InstallUntil\obj\Release\Csharp4InstallUntil.pdb
