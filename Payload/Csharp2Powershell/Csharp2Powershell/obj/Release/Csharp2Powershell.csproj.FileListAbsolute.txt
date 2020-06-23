@@ -4,4 +4,3 @@ C:\Users\A70002\source\repos\Csharp2Powershell\Csharp2Powershell\bin\Release\Csh
 C:\Users\A70002\source\repos\Csharp2Powershell\Csharp2Powershell\obj\Release\Csharp2Powershell.csproj.CoreCompileInputs.cache
 C:\Users\A70002\source\repos\Csharp2Powershell\Csharp2Powershell\obj\Release\Csharp2Powershell.exe
 C:\Users\A70002\source\repos\Csharp2Powershell\Csharp2Powershell\obj\Release\Csharp2Powershell.pdb
-C:\Users\A70002\source\repos\Csharp2Powershell\Csharp2Powershell\obj\Release\Csharp2Powershell.csprojAssemblyReference.cache
