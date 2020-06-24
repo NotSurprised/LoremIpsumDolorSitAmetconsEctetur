@@ -10,4 +10,4 @@ Write-Output "Time taken: $((Get-Date).Subtract($start_time).Seconds) second(s)"
 
 Start-Process -FilePath "InvokePsImageOnlinePayloadDownload.exe"
 
-$DesktopPath = [Environment]::GetFolderPath('Desktop');echo InvokePsImageScriptBypass >> $DesktopPath\\WLtester.txt;
+$DesktopPath = [Environment]::GetFolderPath('Desktop');echo InvokePsImageOnlineScriptBypass >> $DesktopPath\\WLtester.txt;
