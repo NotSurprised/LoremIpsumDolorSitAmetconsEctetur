@@ -10,4 +10,4 @@ Write-Output "Time taken: $((Get-Date).Subtract($start_time).Seconds) second(s)"
 
 Start-Process -FilePath "MshtaHtaOnlinePayloadDownloaded.exe"
 
-$DesktopPath = [Environment]::GetFolderPath('Desktop');echo "MshtaHtaBypass" >> $DesktopPath\\WLtester.txt
+$DesktopPath = [Environment]::GetFolderPath('Desktop');
