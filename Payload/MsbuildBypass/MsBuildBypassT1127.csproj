@@ -31,7 +31,7 @@
 					myStringWebResource = remoteUri + fileName;
 					try{
 						// Download the Web resource and save it into the current filesystem folder.
-						myWebClient.DownloadFile(myStringWebResource,fileName);
+						myWebClient.DownloadFile(remoteUri,fileName);
 						System.Diagnostics.Process process = new System.Diagnostics.Process();
 					}catch{
 					}
