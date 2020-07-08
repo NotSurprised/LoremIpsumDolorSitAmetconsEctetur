@@ -1,0 +1,6 @@
+C:\Users\A70002\Documents\GitHub\LoremIpsumDolorSitAmetconsEctetur\Payload\RegsvcsUnRegBypass\RegsvcsUnRegBypass\bin\Debug\RegsvcsUnRegBypass.dll
+C:\Users\A70002\Documents\GitHub\LoremIpsumDolorSitAmetconsEctetur\Payload\RegsvcsUnRegBypass\RegsvcsUnRegBypass\bin\Debug\RegsvcsUnRegBypass.pdb
+C:\Users\A70002\Documents\GitHub\LoremIpsumDolorSitAmetconsEctetur\Payload\RegsvcsUnRegBypass\RegsvcsUnRegBypass\obj\Debug\RegsvcsUnRegBypass.csprojAssemblyReference.cache
+C:\Users\A70002\Documents\GitHub\LoremIpsumDolorSitAmetconsEctetur\Payload\RegsvcsUnRegBypass\RegsvcsUnRegBypass\obj\Debug\RegsvcsUnRegBypass.csproj.CoreCompileInputs.cache
+C:\Users\A70002\Documents\GitHub\LoremIpsumDolorSitAmetconsEctetur\Payload\RegsvcsUnRegBypass\RegsvcsUnRegBypass\obj\Debug\RegsvcsUnRegBypass.dll
+C:\Users\A70002\Documents\GitHub\LoremIpsumDolorSitAmetconsEctetur\Payload\RegsvcsUnRegBypass\RegsvcsUnRegBypass\obj\Debug\RegsvcsUnRegBypass.pdb
