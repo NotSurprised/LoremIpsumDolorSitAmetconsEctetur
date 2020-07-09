@@ -76,7 +76,7 @@ extern "C" __declspec(dllexport) void rundll(HWND hwnd, HINSTANCE hinst, LPTSTR 
 	return;
 }
 
-void rundll2()
+extern "C" __declspec(dllexport) void rundll2()
 {
 	/*MessageBox(NULL, TEXT("rundll"), TEXT("Rundll32"), MB_OK);
 	system("cmd /c calc");
