@@ -45,7 +45,7 @@ void WLprinter() {
 }
 
 extern "C" __declspec(dllexport) void rundll(HWND hwnd, HINSTANCE hinst, LPTSTR lpCmdLine, INT nCmdShow) {
-	printf("                                 Even Judged?\n");
+	/*printf("                                 Even Judged?\n");
 	printf("                                       /           Let me in?\n");
 	printf(" No license, no problem.            ∩＿＿＿∩        / \n");
 	printf(" 　\\     ∩＿＿＿∩                ∕︵　ㄟ |   ∩＿＿＿∩\n");
@@ -57,7 +57,7 @@ extern "C" __declspec(dllexport) void rundll(HWND hwnd, HINSTANCE hinst, LPTSTR 
 	printf("　　   /rundll32／  (  )           ﹨ .cpl    ﹨          |﹨\n");
 	printf("　　  /       ╱                    |           |   .dll  ﹨| \n");
 	printf(" 　 　    ╴／                      \\           |          |/\n");
-	printf("Dll/CPL GENERATES TIME: %lu\n", (unsigned long)time(NULL));
+	printf("Dll/CPL GENERATES TIME: %lu\n", (unsigned long)time(NULL));*/
 
 	char resultStr[UNLEN + 1];
 	TCHAR username[UNLEN + 1];
@@ -71,14 +71,14 @@ extern "C" __declspec(dllexport) void rundll(HWND hwnd, HINSTANCE hinst, LPTSTR 
 	sprintf(fpath, "C:\\Users\\%s\\Desktop\\WLtester.txt", resultStr);
 
 	fp = fopen(fpath, "a+");
-	fprintf(fp, "DllBypass.\n");
+	fprintf(fp, "DllOfflinePayloadBypass.\n");
 	fclose(fp);
 	return;
 }
 
 void rundll2()
 {
-	MessageBox(NULL, TEXT("rundll"), TEXT("Rundll32"), MB_OK);
+	/*MessageBox(NULL, TEXT("rundll"), TEXT("Rundll32"), MB_OK);
 	system("cmd /c calc");
 
 	MessageBox(NULL, TEXT("reverse_shell"), TEXT("Rundll32"), MB_OK);
@@ -97,6 +97,21 @@ void rundll2()
 	fprintf(fp, "　　  /       ╱                    |           |   .dll  ﹨| \n");
 	fprintf(fp, " 　 　    ╴／                      \\           |          |/\n");
 	fprintf(fp, "Dll/CPL GENERATES TIME: %lu\n", (unsigned long)time(NULL));
+	fclose(fp);*/
+
+	char resultStr[UNLEN + 1];
+	TCHAR username[UNLEN + 1];
+	DWORD username_len = UNLEN + 1;
+	GetUserName(username, &username_len);
+	wcstombs(resultStr, username, wcslen(username));
+	sprintf(resultStr, "%S", username);
+
+	FILE * fp;
+	char fpath[2048];
+	sprintf(fpath, "C:\\Users\\%s\\Desktop\\WLtester.txt", resultStr);
+
+	fp = fopen(fpath, "a+");
+	fprintf(fp, "DllOnlinePayloadBypass.\n");
 	fclose(fp);
 	return;
 }
