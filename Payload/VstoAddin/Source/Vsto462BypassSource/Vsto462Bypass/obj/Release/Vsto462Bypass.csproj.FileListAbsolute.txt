@@ -9,3 +9,4 @@ C:\Users\A70002\source\repos\Vsto462Bypass\Vsto462Bypass\obj\Release\Vsto462Bypa
 C:\Users\A70002\source\repos\Vsto462Bypass\Vsto462Bypass\obj\Release\Vsto462Bypass.csproj.CopyComplete
 C:\Users\A70002\source\repos\Vsto462Bypass\Vsto462Bypass\obj\Release\Vsto462Bypass.dll
 C:\Users\A70002\source\repos\Vsto462Bypass\Vsto462Bypass\obj\Release\Vsto462Bypass.pdb
+C:\Users\A70002\source\repos\Vsto462Bypass\Vsto462Bypass\obj\Release\Vsto462Bypass.csprojAssemblyReference.cache

@@ -9,3 +9,4 @@ C:\Users\A70002\source\repos\Vsto400Bypass\Vsto400Bypass\obj\Release\Vsto400Bypa
 C:\Users\A70002\source\repos\Vsto400Bypass\Vsto400Bypass\obj\Release\Vsto400Bypass.csproj.CopyComplete
 C:\Users\A70002\source\repos\Vsto400Bypass\Vsto400Bypass\obj\Release\Vsto400Bypass.dll
 C:\Users\A70002\source\repos\Vsto400Bypass\Vsto400Bypass\obj\Release\Vsto400Bypass.pdb
+C:\Users\A70002\source\repos\Vsto400Bypass\Vsto400Bypass\obj\Release\Vsto400Bypass.csprojAssemblyReference.cache
